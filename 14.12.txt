@@ -1,0 +1,115 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Loops
+{
+    class Program
+    {
+        static void Main(string[] args)
+
+        {
+
+
+            /*Console.Write("Podaj liczbê: ");
+            int liczba = Convert.ToInt32(Console.ReadLine());*/
+
+
+            /*while (Math.Pow(2,i) <= liczba)
+            {
+
+                Console.Write("{0} ", Math.Pow(2,i++));
+
+               
+            }
+            Console.ReadKey();*/
+
+            /*Random rand = new Random();
+            int liczba, wylosowana = rand.Next(1, 11);
+
+
+           
+            do
+            {
+                Console.Write("Zgadnij liczbê ");
+                liczba = Convert.ToInt32(Console.ReadLine());
+
+                if (liczba < wylosowana)
+                    Console.WriteLine("Za ma³o!");
+                if (liczba > wylosowana)
+                    Console.WriteLine("Za du¿o!");
+            } 
+            
+            while (liczba != wylosowana);
+
+
+            Console.WriteLine("wygrana!");*/
+
+            /*string[] tablica = new string[5];
+            tablica[0] = "a";
+            tablica[1] = "b";
+            tablica[2] = "c";
+            tablica[3] = "d";
+            tablica[4] = "e";
+
+            for (int indeks = 0; indeks < tablica.Length; indeks++)
+            {
+                Console.WriteLine(tablica[indeks]);
+            }
+
+
+            foreach (string element in tablica)
+            {
+                Console.WriteLine(element);
+            }
+            int[] lotto = new int[6];
+
+            Random rand = new Random();
+
+            Console.WriteLine("Printing 6 random numbers" +
+                                " between 1 and 49");
+            for (int i = 1; i <= 6; i++)
+                Console.WriteLine("{0} -> {1}", i, rand.Next(1, 49));*/
+
+
+            int[] lotto2 = new int[6];
+            Random randNum = new Random();
+            for (int i = 0; i < lotto2.Length; i++)
+                lotto2[i] = randNum.Next(1, 49);
+
+
+            foreach (int element in lotto2)
+                Console.Write("{0}. ", element);
+            Array.Sort(lotto2);
+            Console.WriteLine("Posortowane liczby to:");
+
+
+            foreach (int element in lotto2)
+                Console.Write("{0}. ", element);
+
+            Console.ReadKey();
+            int tmp;
+
+            for(int j=0; j<lotto2.Length-1;j++)
+                for(int i = 0; 1>lotto2.Length-1; i++)
+                    if(lotto2[i+1]<lotto2[i])
+                    {
+                        tmp = lotto2[i + 1];
+                        lotto2[i + 1] = lotto2[1];
+                        lotto2[i] = tmp;
+                    }
+
+
+            
+
+
+
+
+
+
+                }
+            }
+        }
+ 
